@@ -28,7 +28,7 @@ Additionally, it ensures that the inheritance process for digital assets doesn't
 1) Write down your keys with instructions on how to recover the assets.
 2) Do nothing.
 
-Writing down keys and instruction has a severe OpSec vulnerability. Wherever the keys are recorded, they are vulnerable to being found and used by untrusted third parties. Even when a trusted party is used, there is a risk that they will misbehave or handle the keys carelessly. There are other more elaborate schemes that can be used to overcome these vulnerabilities, but these vulnerability are never completely mitigated and often these schemes introduce new vulnerabilities.
+Writing down keys and instruction introduces a severe OpSec vulnerability. Wherever the keys are recorded, they are vulnerable to being found and used by untrusted third parties. Even when a trusted party is used, there is a risk that they will misbehave or handle the keys carelessly. There are other more elaborate schemes that can be used to overcome these vulnerabilities, but these vulnerability are never completely mitigated and often these schemes introduce new vulnerabilities.
 
 The option to do nothing is the default option. It is probably they one used by most people who own a moderate amount of digital assets. In these cases, the assets are lost when the holder passes away.
 
@@ -39,6 +39,7 @@ We also envision Alfred's use for informal fund sharing by individuals. For exam
 People have a plethora of tools for supercharging their day-to-day productivity but when it comes to the pivotal moments in our lives, from birth through graduation, marriage, children, and death, we still generally rely on expensive, archaic solutions to manage our affairs. Alfred offers a way to manage these events more effectively using smart contract technology.
 
 Automating the inheritance of digital assets can help people help their loved ones during some of the most difficult moments in their lives. 
+=======
 
 ### How long will it take 
 We will launch our unaudited beta of Alfred August 1 with a full release and Gnosis Safe integration targeted for October 1.
@@ -56,7 +57,13 @@ Our goal is to enabling people to monitor the passage of the most important even
 Facilitating the inheritance of digital assets upon incapacitation or death represents a critical gap in decentralized key management and we believe giving people access to data on such a pivotal event can be used to deliver a number of services not limited to cryptocurrency inheritance, including simple notifications and fiat inheritance. 
 
 ### Features
-_How do you plan to implement your project, which tools and framework will you use? Optional: Architecture, Mockups, etc._
+- Create or Sync Wallet
+Create Wallet allows the user to make a Gnosis Safe whose contents may be made available to beneficiaries by entering an Ethereum wallet address. Sync wallet allows users to sync a wallet and make its contents available to beneficiaries.
+
+- Dashboard
+  - Set/Edit Beneficiaries
+  - Set Executor (if desired)
+  - Claim Funds
 
 ### Team description
 - Aaron Anderson brings dApps to market as a dApp engineer and cofounder of Web3Devs and Ching!
