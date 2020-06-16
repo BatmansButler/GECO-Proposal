@@ -59,9 +59,11 @@ Facilitating the inheritance of digital assets upon incapacitation or death repr
 
 ### Features
 - Create or Sync Wallet
+
 Create Wallet allows the user to make a Gnosis Safe whose contents may be made available to beneficiaries by entering an Ethereum wallet address. Sync wallet allows users to sync a wallet and make its contents available to beneficiaries.
 
 - Dashboard
+
   - Set/Edit Beneficiaries
   - Set Executor (if desired)
   - Claim Funds
@@ -89,7 +91,7 @@ Create Wallet allows the user to make a Gnosis Safe whose contents may be made a
 - Consult legal counsel
 - Interview users; iterate on UI
 
-**2 Months - 15000**
+**2 Months - $15000**
 
 ### Others	 
 Anything else we want to share?
