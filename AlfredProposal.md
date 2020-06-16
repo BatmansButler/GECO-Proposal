@@ -21,15 +21,16 @@ and a service enabling Americans to automate their inheritance by monitoring dat
 Both solutions enable users to determine when death may have occurred and provide processes for confirming and contesting the death.
 
 ### Why did you decide to build it 
-The moment we die, our financial obligations get passed along to loved ones but even in the best circumstances, potential benefits from 
-inheritance and insurance generally take 3-9 months to arrive.
-
 People have a plethora of tools for supercharging their day-to-day productivity but when it comes to the pivotal moments in our lives, 
 from birth through graduation, marriage, children, and death, we still generally rely on expensive, archaic solutions to manage our 
 affairs.
 
+The moment we die, our financial obligations get passed along to loved ones but even in the best circumstances, potential benefits from 
+inheritance and insurance generally take 3-9 months to arrive.
+
 Automating the inheritance of digital and financial assets can help people help their loved ones during some of the most difficult 
-moments in their lives. 
+moments in their lives. In the future, we aim to extend the functionality of our oracle to facilitate other services like fiat 
+inheritance and notifications.
 
 ### How long will it take 
 We aim to launch our unaudited beta version August 1 with a full release targeted for October 1.
@@ -50,7 +51,13 @@ and we believe giving people access to data on such a pivotal event can be used 
 cryptocurrency inheritance, including simple notifications and fiat inheritance. 
 
 ### Features
-_How do you plan to implement your project, which tools and framework will you use? Optional: Architecture, Mockups, etc._
+- Create or Sync Wallet
+Create Wallet allows the user to make a Gnosis Safe whose contents may be made available to beneficiaries by entering an Ethereum wallet address. Sync wallet allows users to sync a wallet and make its contents available to beneficiaries.
+
+- Dashboard
+  - Set/Edit Beneficiaries
+  - Set Executor (if desired)
+  - Claim Funds
 
 ### Team description
 - Aaron Anderson brings dApps to market as a dApp engineer and cofounder of Web3Devs and Ching!
