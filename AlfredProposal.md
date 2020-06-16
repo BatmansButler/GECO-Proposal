@@ -39,6 +39,7 @@ We also envision Alfred's use for informal fund sharing by individuals. For exam
 People have a plethora of tools for supercharging their day-to-day productivity but when it comes to the pivotal moments in our lives, from birth through graduation, marriage, children, and death, we still generally rely on expensive, archaic solutions to manage our affairs. Alfred offers a way to manage these events more effectively using smart contract technology.
 
 Automating the inheritance of digital assets can help people help their loved ones during some of the most difficult moments in their lives. 
+
 =======
 
 ### How long will it take 
