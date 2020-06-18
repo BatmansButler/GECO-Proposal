@@ -58,15 +58,23 @@ Our goal is to enable people to monitor the passage of the most important events
 Facilitating the inheritance of digital assets upon incapacitation or death represents a critical gap in decentralized key management. We believe giving people access to data on such a pivotal event can be used to deliver a number of services not limited to cryptocurrency inheritance, including simple notifications and fiat inheritance. 
 
 ### Features
+- Digital Estate Inheritance
+
+Estate owners designate how their assets will be divided among their chosen beneficiaries when the time comes.  An executor may be added to assist beneficiaries with the distribution process and to help in settling any outstanding loans.  The Alfred Estate dApp makes the process of inheritance distribution simple.
+
 - Create or Sync Wallet
 
-Create Wallet allows the user to make a Gnosis Safe whose contents may be made available to beneficiaries by entering an Ethereum wallet address. Sync wallet allows users to sync a wallet and make its contents available to beneficiaries.
+Create Wallet allows the user to make a Gnosis Safe that is automatically connected to and protected by their Alfred Estate. Sync Wallet allows users to connect an existing Gnosis Safe with their estate.  By connecting a Gnosis Safe Wallet to an Alfred Estate any assets stored in the wallet are protected.
+
+- Wallet/Estate Recovery
+
+The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to a wallet is lost while the owner is alive, the Gnosis Safe can be recovered using the Alfred Estate.  Recovery involves the assistance of beneficiaries and optionally the executor of the estate according to the owners prior specifications.
 
 - Dashboard
 
   - Set/Edit Beneficiaries
   - Set Executor (if desired)
-  - Claim Funds
+  - Distribute/Claim Funds
 
 ### Team description
 - Aaron Anderson brings dApps to market as a dApp engineer and cofounder of Web3Devs and Ching!
