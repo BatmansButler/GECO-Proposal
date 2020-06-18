@@ -1,5 +1,5 @@
 # Alfred Project Plan
-Version 1.0-Beta
+Version ?.?-Beta
 
 The first version of Alfred is the minimum viable product. It's purpose of the release is to demonstrate how Alfred works to the community to gain feedback, demonstrate to potential investors, and start early marketing efforts toward key clients and influencers in the industry. We also hope to develop a small user base that will be transitioned to the released product when it is ready. 
 
