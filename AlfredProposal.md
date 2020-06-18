@@ -76,6 +76,8 @@ The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to 
   - Set Executor (if desired)
   - Distribute/Claim Funds
 
+Hey do we to reference anything else?
+
 ### Team description
 - Aaron Anderson brings dApps to market as a dApp engineer and cofounder of Web3Devs and Ching!
 - Ken Hodler is a senior engineer, formerly CEO and an early contributor at Keepkey (exited to ShapeShift).
