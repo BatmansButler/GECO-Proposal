@@ -29,4 +29,4 @@ Additional features may include (stretch goals):
 
 ## The workflow of Alfred
 
-![Onboarding Flowchart(./onboarding-flowchart.svg)]
+![Onboarding Flowchart](./onboarding-flowchart.svg)
