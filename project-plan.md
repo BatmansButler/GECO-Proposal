@@ -6,14 +6,22 @@ The first version of Alfred demonstrates the minimum viable product to gain feed
 ## Features
 The release offers a simplified product experience that allows users to:
 
-- Create or sync wallets using our web application
-- Deposit and manage funds in an Alfred wallet
-- Define beneficiaries and executors 
-- Set up liveliness monitoring method and parameters
-- Issue test requests to simulate the inheritance process
-- Integration of the inhertance functionality as a Gnosis Safe app
+- Plan and manage their estate
+  - Create or sync wallets using our web application
+  - Deposit and manage funds in an Alfred wallet
+  - Define beneficiaries and executors 
+  - Issue test requests to simulate the inheritance process
+
+- Generate proof-of-non-activity and proof-of-death
+  - Set up 'liveness' monitoring method and parameters
+  - Onboard users with KYC if using monitoring that requires collecting PII and transmitting it to a third party
+  - Set up third party monitoring, if required
+  - Offer payment options and accept payment for premium monitoring services, including recurrent payment processing and handling of payment exceptions   
+  
+- Access inherited assets
 
 ## Other goals
+- Integration of the inhertance functionality as a Gnosis Safe app
 - Refine the product and pricing strategies
 - Refine the marketing and messaging about the product
 
