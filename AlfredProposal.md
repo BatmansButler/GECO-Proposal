@@ -50,7 +50,7 @@ Twitter
 
 ## Your Proposal 
 ### Project description
-We're applying for grants to support the ongoing development of Alfred and cover an audit of the smart contracts. The plan is to share an unaudited beta by the end of the summer and provide a full release the following quarter. [Project Plan](project-plan.md)
+We're applying for grants to support the ongoing development of Alfred and cover an audit of the smart contracts. The plan is to share an unaudited beta by the end of the summer and provide a full release the following quarter as both a standalone dApp and Gnosis Safe app. [Project Plan](project-plan.md)
 
 Our goals are to raise awareness of the issues around the self-custody of digital assets when using decentralized technologies and develop services that leverage Alfred to accommodate the needs of individuals and organizations maintaining custody of cryptocurrency and digital assets for various purposes. Some of these services may include:
 
