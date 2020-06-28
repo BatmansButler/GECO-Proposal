@@ -12,11 +12,17 @@
 - Seth Goldfarb
 
 ### What project are you building 
-Alfred is a digital asset inheritance solution that helps people transfer their assets to their loved ones after they die or become incapacitated. The dApp ensures that the inheritance process for digital assets doesn't have to be entrusted to a third party by facilitating inheritance when the user fails to check-in using our customizable **dead man’s switch**. 
+Alfred is a cryptocurrency estate planner that allows people transfer their assets to a backup wallet or set of wallets after the system generates **proof-of-non-access** or **proof-of-death.** The dApp will help users set up their backup wallet or assign beneficiaries and access the funds once the system decides they're incapacitated or dead.
 
-Our goal is to develop tools that help prevent the loss of digital assets due to the loss of control over a particular set of keys.
+We offer two methods for determining whether or not someone can access their wallet:
 
-We will use this grant to complete the implementation of the Alfred Estate Smart Contract and dApp, have the software audited, and build a plugin that enables its use by a Gnosis Safe wallet.
+1. Our decentralized inheritance solution generates **proof-of-non-access** when the user fails to check-in using our customizable **dead man’s switch**.
+
+2. We will also offer an automated inheritance solution using a **live man's switch** that checks reliable sources of data to generate **proof-of-death**. Our first iteration uses data reported to the U.S. Social Security Administration and we plan to expand our geography according to demand.
+
+Both methods incorporate flows for confirming and contesting the report of non-access or death.
+
+Our goal is to develop tools that help prevent the loss of digital assets due to the loss of control over a particular set of keys. We will use this grant to complete the implementation of the Alfred Estate Smart Contract and dApp, have the software audited, and build a plugin that enables its use by a Gnosis Safe wallet.
 
 ### Why did you decide to build it 
 Helping people safely maintain custody of their digital assets remains one of the largest hurdles to the adoption of decentralized technologies. The value of lost cryptocurrency (sent to non-existent addresses or held in unreachable wallets) exceeds that of stolen cryptocurrency by a significant proportion (approximately 4x, according to our estimate).
@@ -24,12 +30,12 @@ Helping people safely maintain custody of their digital assets remains one of th
 Facilitating the inheritance of digital assets upon incapacitation or death represents a critical gap in decentralized key management.
 Typically, there are two strategies for crypto inheritance:
 
-1) Write down your keys with instructions on how to recover the assets.
-2) Do nothing.
+1) Do nothing
+2) Write down your keys with instructions on how to recover the assets
 
-Writing down keys and instruction introduces a severe OpSec vulnerability. Wherever the keys are recorded, they are vulnerable to being found and used by untrusted third parties. Even when a trusted party is used, there is a risk that they will misbehave or handle the keys carelessly. 
+Unfortunately, "do nothing is generally the default option. It is probably the one used by most people who own a moderate amount of digital assets and in these cases, the assets are lost when the holder passes away.
 
-Elaborate schemes can be used to overcome these vulnerabilities but the vulnerabilities are never completely mitigated and often these schemes introduce new vulnerabilities. The option to do nothing is the default option. It is probably the one used by most people who own a moderate amount of digital assets. In these cases, the assets are lost when the holder passes away.
+Writing down keys and instructions can work but introduces a severe vulnerabilities with regard to OpSec. Wherever the keys are recorded, they are vulnerable to discovery and use by malicious third parties. Even when a trusted party is used, there are risks that the person or group will misbehave or handle the keys carelessly. Elaborate schemes can be used to overcome these vulnerabilities but the vulnerabilities are never completely mitigated and often these schemes introduce new vulnerabilities. 
 
 =======
 
@@ -44,11 +50,9 @@ Twitter
 
 ## Your Proposal 
 ### Project description
-We began exploring these ideas at ETHDenver 2020 and continued our work through the MetaCartel Dragon Quest, securing bounties from Kyber and Gnosis along the way.
+We're applying for grants to support the ongoing development of Alfred and cover an audit of the smart contracts. The plan is to share an unaudited beta by the end of the summer and provide a full release the following quarter. [Project Plan](project-plan.md)
 
-We've developed a minimalistic protocol for digital wallet recovery that can increase the likelihood a digital wallet holder will be able to recover their assets in the event they lose access to their primary wallet by forcing them to prove their ability to access their primary wallet at regular intervals.
-
-Alfred is a proof-of-concept we've developed for using this protocol. Our goals are to promote adoption of this protocol and develop services that leverage the protocol to accommodate the needs of individuals and organizations maintaining custody of cryptocurrency and digital assets for various purposes. Some of these services may include:
+Our goals are to raise awareness of the issues around the self-custody of digital assets when using decentralized technologies and develop services that leverage Alfred to accommodate the needs of individuals and organizations maintaining custody of cryptocurrency and digital assets for various purposes. Some of these services may include:
 
 - Helping individuals and organizations prevent the loss of digital wallets
 - Helping individuals and organizations prepare for the death or incapacitation of loved ones or colleagues.
@@ -67,7 +71,7 @@ Create Wallet allows the user to make a Gnosis Safe that is automatically connec
 
 - Wallet/Estate Recovery
 
-The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to a wallet is lost while the owner is alive, the Gnosis Safe can be recovered using the Alfred Estate.  Recovery involves the assistance of beneficiaries and optionally the executor of the estate according to the owners prior specifications.
+The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to a wallet is lost while the owner is alive, the Gnosis Safe can be recovered using the Alfred Estate. Recovery involves the assistance of beneficiaries and optionally the executor of the estate according to the owners prior specifications.
 
 - Dashboard
 
@@ -80,6 +84,10 @@ The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to 
 - Ken Hodler is a senior engineer, formerly CEO and an early contributor at Keepkey (exited to ShapeShift).
 - Morgan Sherwood is a dApp engineer with 25+ year career as a Python developer and algorithmic trader skilled in smart contract security analysis.
 - Seth Goldfarb is a marketing professional who helps companies tell better stories about the development of blockchain and its applications.
+
+The team began exploring this problem at ETHDenver 2020 and continued our work through the MetaCartel Dragon Quest, securing bounties from Kyber and Gnosis and winning 2nd Prize overall in the Dragon Quest along the way.
+
+We are incorporated as a Wyoming-based LLC and operate using an Aragon DAO under a framework developed by Etherize.
 
 ### Timeline, Milestones and Deliverables
 
