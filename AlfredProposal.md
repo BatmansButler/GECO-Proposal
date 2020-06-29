@@ -37,6 +37,9 @@ Unfortunately, "do nothing" is generally the default option. It is probably the 
 
 Writing down keys and instructions can work but introduces a severe vulnerabilities with regard to OpSec. Wherever the keys are recorded, they are vulnerable to discovery and use by malicious third parties. Even when a trusted party is used, there are risks that the person or group will misbehave or handle the keys carelessly. Elaborate schemes can be used to overcome these vulnerabilities but the vulnerabilities are never completely mitigated and often these schemes introduce new vulnerabilities. 
 
+Alfred introduces the concept of Perpetual Inheritance. This protocol increases the likelihood a digital wallet holder will be able to recover their assets in the event they lose access to their primary wallet by forcing them to prove their ability to access their primary wallet at regular intervals.
+
+![](illustrations/PerpetualInheritance.png)
 =======
 
 ### How long will it take 
