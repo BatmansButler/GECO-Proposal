@@ -1,0 +1,28 @@
+digraph Onboarding {
+    onboarding [label="Onboarding"]
+    done [label="Done"];
+    form1 [label="Collect executor,\nbeneficiaries,\nand liveliness\nmonitoring\nstrategy", shape=box];
+    monitortype [label="LMS\nor\nDMS?", shape=diamond];
+    paymentform [label="Collect\npayment", shape=box]
+    form2 [label="Collect\nmonitoring/KYC\ndata" shape=box]
+    kyc [label="KYC check", shape=box]
+    configmonitor [label="Configure\nLMS\nMonitoring" shape=box]
+
+    makeoracle [label="Configure oracle\ncontract", shape=box]
+    makewallet [label="Configure wallet\ncontract", shape=box]
+
+    onboarding -> form1;
+    form1 -> monitortype;
+    monitortype -> paymentform [label=LMS]
+    monitortype -> makeoracle [label=DMS]
+
+    /* LMS Flow */
+    paymentform -> form2
+    form2 -> kyc
+    kyc -> configmonitor
+    configmonitor -> makeoracle
+
+    /* Set up the contracts */
+    makeoracle -> makewallet
+    makewallet -> done
+}

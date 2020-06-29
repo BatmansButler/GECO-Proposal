@@ -1,0 +1,42 @@
+digraph DeadManSwitch {
+    # Dead man switch node
+    report [label="Report\nLiveliness"]
+    other [label="Other\ninteractions"]
+    checkOwnerKey [label="Sender\nis\nowner?" shape="diamond"]
+    updateLiveliness [label="Update the last\nreport timestamp", shape=box]
+
+    # Dead man switch connections
+    report->checkOwnerKey;
+    other->checkOwnerKey;
+    checkOwnerKey -> updateLiveliness [label="yes"];
+
+    # Initiate executorship nodes
+    initiateExecutorship [label="Initiate\nExecutorship"]
+    isDead [label="Age of last report\ntimestamp exceeds\ncheckin frequency" shape="box"]
+    checkExecutorExists [label="Executor\ndefined?" shape="diamond"]
+    checkExecutorKey [label="Sender\nis\nexecutor?" shape="diamond"]
+    checkHierKey [label="Sender\nis\nheir?" shape="diamond"]
+    enableInheritanceDistribution [label="Distribute\nestate" shape="box"]
+    enableExecutorActions [label="Enable executor\nactions" shape="box"]
+
+    # Initiate executor connections
+    initiateExecutorship -> isDead
+    isDead -> checkExecutorExists [label="yes"]
+    checkExecutorExists -> checkExecutorKey [label="yes"]
+    checkExecutorExists -> checkHierKey [label="no"]
+    checkHierKey -> enableInheritanceDistribution [label="yes"]
+    checkExecutorKey -> enableExecutorActions [label=Yes]
+
+    # Enable distribution nodes
+    executorEnabledDistribution [label="Sender?" shape="diamond"]
+    updateOwnerKeyToHeirKey [label="Replace owner with heir" shape="box"]
+
+    # Enable distribution connections
+    enableDistribution -> isStillDead
+    isStillDead -> executorEnabledDistribution
+    executorEnabledDistribution -> updateOwnerKeyToHeirKey [label=Executor]
+    executorEnabledDistribution -> executorMaxDurationExceeded [label=Heir]
+    executorMaxDurationExceeded -> updateOwnerKeyToHeirKey [label=Yes]
+
+
+}

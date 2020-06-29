@@ -25,6 +25,25 @@ The release offers a simplified product experience that allows users to:
 - Refine the product and pricing strategies
 - Refine the marketing and messaging about the product
 
+## System Components
+
+
 ## The workflow of Alfred
 
-![Onboarding Flowchart](./onboarding-flowchart.svg)
+### Onboarding
+Onboarding is conduct through a dapp. The main objectives are:
+1) collect the basic information needed to set up liveliness monitoring and a wallet
+2) If LMS is being used, collect payment and perform KYC. KYC is needed to ensure that we are monitoring the liveliness of the right individual and get their permission to do the monitoring. 
+3) Configure the oracle contract.
+4) Configure the wallet contract.
+
+![Onboarding Flowchart](./illustrations/onboarding.svg)
+
+In addition to interacting with the ethereum blockchain, the onboarding dapp interacts with a payment processor, a KYC service, and the liveliness monitoring service.
+
+### Dead Man Switch (DMS) Workflow
+![DMS Flowchart](./illustrations/onboarding.svg)
+
+TODO LMS Workflow
+
+TODO Post Death Workflow
