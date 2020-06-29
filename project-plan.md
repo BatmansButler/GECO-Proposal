@@ -44,6 +44,8 @@ In addition to interacting with the ethereum blockchain, the onboarding dapp int
 ### Dead Man Switch (DMS) Workflow
 ![DMS Flowchart](./illustrations/dms.svg)
 
-TODO LMS Workflow
+### Live Man Switch (LMS) Workflow
+![LMS Flowchart](./illustrations/lms.svg)
 
-TODO Post Death Workflow
+### Post Death Workflow
+![Post Death Flowchart](./illustrations/post-death.svg)

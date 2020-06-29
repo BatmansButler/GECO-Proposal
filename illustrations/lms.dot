@@ -1,4 +1,7 @@
-digraph DeadManSwitch {
+digraph LiveManSwitch {
+    # Register
+    register->Add user
+
     # Dead man switch node
     report [label="Report\nLiveliness"]
     other [label="Other\ninteractions"]
