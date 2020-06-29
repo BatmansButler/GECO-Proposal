@@ -21,7 +21,7 @@ digraph PostDeathWorkflow {
 
     # Enable distribution connections
     enableDistribution -> isStillDead
-    isStillDead -> executorEnabledDistribution
+    isStillDead -> executorEnabledDistribution [label=yes]
     executorEnabledDistribution -> updateOwnerKeyToHeirKey [label=Executor]
     executorEnabledDistribution -> executorMaxDurationExceeded [label=Heir]
     executorMaxDurationExceeded -> updateOwnerKeyToHeirKey [label=Yes]
