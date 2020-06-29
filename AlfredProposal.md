@@ -43,7 +43,7 @@ Writing down keys and instructions can work but introduces a severe vulnerabilit
 We plan to launch our unaudited beta of Alfred August 1 with a full release and Gnosis Safe integration targeted for October 1.
 
 ### How much funding are you requesting  
-$20,000
+$25,000
 
 ### How did you hear about the GECO
 Twitter
@@ -79,8 +79,6 @@ The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to 
   - Set Executor (if desired)
   - Distribute/Claim Funds
 
-[Detailed Project Plan](https://github.com/BatmansButler/GECO-Proposal/blob/master/project-plan.md)
-
 ### Team description
 - Aaron Anderson brings dApps to market as a dApp engineer and cofounder of Web3Devs and Ching!
 - Ken Hodler is a senior engineer, formerly CEO and an early contributor at Keepkey (exited to ShapeShift).
@@ -99,7 +97,7 @@ We are incorporated as a Wyoming-based LLC and operate using an Aragon DAO under
 - Complete smart contracts and front-end
 - Launch (unaudited) beta version for testing
 
-**1 Month - $5000**	
+**1 Month - $6250**	
 
 **Phase II**
 
@@ -108,7 +106,7 @@ We are incorporated as a Wyoming-based LLC and operate using an Aragon DAO under
 - Consult legal counsel
 - Interview users
 
-**1 Months - $10000**
+**1 Month - $12500**
 
 **Phase III**
 
@@ -117,4 +115,4 @@ We are incorporated as a Wyoming-based LLC and operate using an Aragon DAO under
 - Address concerns revealed in audit
 - Launch full release and Gnosis Safe app
 
-**1 Month - $5000**
+**1 Month - $6250**
