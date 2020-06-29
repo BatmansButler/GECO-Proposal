@@ -22,7 +22,7 @@ We offer two methods for determining whether or not someone can access their wal
 
 Both methods incorporate flows for confirming and contesting the report of non-access or death.
 
-Our goal is to develop tools that help prevent the loss of digital assets due to the loss of control over a particular set of keys. We will use this grant to complete the implementation of the Alfred Estate Smart Contract and dApp, have the software audited, and build a plugin that enables its use by a Gnosis Safe wallet.
+Our goal is to develop tools that help prevent the loss of digital assets due to the loss of control over a particular set of keys. We will use this grant to fund development of our standalone dApp along with the Gnosis Safe app, have the software audited, and help cover the cost of subscription to the data service.
 
 ### Why did you decide to build it 
 Helping people safely maintain custody of their digital assets remains one of the largest hurdles to the adoption of decentralized technologies. The value of lost cryptocurrency (sent to non-existent addresses or held in unreachable wallets) exceeds that of stolen cryptocurrency by a significant proportion (approximately 4x, according to our estimate).
@@ -33,17 +33,17 @@ Typically, there are two strategies for crypto inheritance:
 1) Do nothing
 2) Write down your keys with instructions on how to recover the assets
 
-Unfortunately, "do nothing is generally the default option. It is probably the one used by most people who own a moderate amount of digital assets and in these cases, the assets are lost when the holder passes away.
+Unfortunately, "do nothing" is generally the default option. It is probably the one used by most people who own a moderate amount of digital assets and in these cases, the assets are lost when the holder passes away.
 
 Writing down keys and instructions can work but introduces a severe vulnerabilities with regard to OpSec. Wherever the keys are recorded, they are vulnerable to discovery and use by malicious third parties. Even when a trusted party is used, there are risks that the person or group will misbehave or handle the keys carelessly. Elaborate schemes can be used to overcome these vulnerabilities but the vulnerabilities are never completely mitigated and often these schemes introduce new vulnerabilities. 
 
 =======
 
 ### How long will it take 
-We will launch our unaudited beta of Alfred August 1 with a full release and Gnosis Safe integration targeted for October 1.
+We plan to launch our unaudited beta of Alfred August 1 with a full release and Gnosis Safe integration targeted for October 1.
 
 ### How much funding are you requesting  
-$17,500
+$20,000
 
 ### How did you hear about the GECO
 Twitter
@@ -113,5 +113,6 @@ We are incorporated as a Wyoming-based LLC and operate using an Aragon DAO under
 **Deliverables**
 - Iterate on UI
 - Address concerns revealed in audit
+- Launch full release and Gnosis Safe app
 
-**1 Month - $2500**
+**1 Month - $5000**
