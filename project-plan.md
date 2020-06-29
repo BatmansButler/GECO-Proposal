@@ -42,7 +42,7 @@ Onboarding is conduct through a dapp. The main objectives are:
 In addition to interacting with the ethereum blockchain, the onboarding dapp interacts with a payment processor, a KYC service, and the liveliness monitoring service.
 
 ### Dead Man Switch (DMS) Workflow
-![DMS Flowchart](./illustrations/onboarding.svg)
+![DMS Flowchart](./illustrations/dms.svg)
 
 TODO LMS Workflow
 
