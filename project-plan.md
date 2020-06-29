@@ -1,5 +1,4 @@
 # Alfred Project Plan
-Version ?.?-Beta
 
 The first version of Alfred demonstrates the minimum viable product to gain feedback, show to potential investors, and start early marketing efforts toward potential clients and key influencers. Our goal is to develop and promote protocols that make it safer to self-custody digital assets. With our cryptocurrnecy inheritance solution, we aim to develop a user base who cares about security and may be interested in purchasing premium services.
 
