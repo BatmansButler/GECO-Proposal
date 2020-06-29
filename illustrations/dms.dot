@@ -1,0 +1,17 @@
+digraph DeadManSwitch {
+    # Dead man switch node
+    report [label="Report\nLiveliness"]
+    other [label="Other\ninteractions"]
+    checkOwnerKey [label="Sender\nis\nowner?" shape="diamond"]
+    updateLiveliness [label="Update the last\nreport timestamp", shape=box]
+
+    # Dead man switch connections
+    report->checkOwnerKey;
+    other->checkOwnerKey;
+    checkOwnerKey -> updateLiveliness [label="yes"];
+
+    # Owner deceased condition
+    ownerIsDeceased [label="Owner is\ndeceased?"]
+    ownerDeceasedCondition [label="Age of last report\ntimestamp exceeds\ncheckin frequency" shape="box"]
+    ownerIsDeceased -> ownerDeceasedCondition
+}

@@ -1,0 +1,40 @@
+digraph LiveManSwitch {
+    # Setup
+    register [label="New LMS"]
+    AddUserToMonitoring [label="Update monitored\npersons database" shape=rectangle]
+    SendUserMonitoringFile [label="Notify\nData Provider\nof Update" shape=rectangle]
+    SetupWallet [label="Set\noracle address\n& LMS timeout\nin wallet" shape=rectangle]
+
+    register -> AddUserToMonitoring -> SendUserMonitoringFile
+    register -> SetupWallet
+
+    # Monitor user
+    MonitoringReportReceived [label="New death\nreported"]
+    SendDeathUpdatesToOracleContract [label="Notify\nOracle" shape=rectangle]
+    SendNotificationToWallet [label="Notify\nWallet" shape=rectangle]
+    SetDeathReportedDate [label="Set death\ntimestamp" shape=rectangle]
+
+    MonitoringReportReceived -> AddUserToMonitoring
+    MonitoringReportReceived -> SendDeathUpdatesToOracleContract -> SendNotificationToWallet -> SetDeathReportedDate
+
+    # INDY detection
+    report [label="I'm not\ndead yet"]
+    other [label="Other\ninteractions"]
+    checkOwnerKey [label="Sender\nis\nowner?" shape="diamond"]
+    updateLiveliness [label="Clear death\nreported timestamp", shape=box]
+
+    # Dead man switch connections
+    report->checkOwnerKey;
+    other->checkOwnerKey;
+    checkOwnerKey -> updateLiveliness [label="yes"];
+    updateLiveliness->AddUserToMonitoring
+
+    # Owner deceased condition
+    ownerIsDeceased [label="Owner is\ndeceased?"]
+    ownerReportedDead [label="Death timestamp\nis set" shape="diamond"]
+    deathReportAged [label="Age of\ndeath report exceeds\nLMS timeout" shape=diamond]
+
+    ownerIsDeceased -> ownerReportedDead
+    ownerReportedDead -> deathReportAged[label=yes]
+    deathReportAged -> dead[label=yes]
+}

@@ -1,0 +1,28 @@
+digraph PostDeathWorkflow {
+    # Initiate executorship nodes
+    initiateExecutorship [label="Initiate\nExecutorship"]
+    checkExecutorKey [label="Sender\nis\nexecutor?" shape="diamond"]
+    isDead [label="Owner is\nDeceased?" shape="diamond"]
+    setExecutorStartTimestamp [label="Save current\ntimestamp" shape="box"]
+    enableExecutorActions [label="Enable executor\nactions" shape="box"]
+
+    # Initiate executor connections
+    initiateExecutorship -> checkExecutorKey
+    checkExecutorKey -> isDead [label=Yes]
+    isDead -> setExecutorStartTimestamp [label=Yes]
+    setExecutorStartTimestamp -> enableExecutorActions
+
+    # Enable distribution nodes
+    enableDistribution [label="Enable\nDistribution"]
+    isStillDead [label="Owner is\ndeceased?", shape=diamond]
+    executorEnabledDistribution [label="Sender?" shape="diamond"]
+    updateOwnerKeyToHeirKey [label="Replace owner with heir" shape="box"]
+    executorMaxDurationExceeded [label="Age of\nexecutor timestamp\nexceeds max" shape=diamond]
+
+    # Enable distribution connections
+    enableDistribution -> isStillDead
+    isStillDead -> executorEnabledDistribution [label=yes]
+    executorEnabledDistribution -> updateOwnerKeyToHeirKey [label=Executor]
+    executorEnabledDistribution -> executorMaxDurationExceeded [label=Heir]
+    executorMaxDurationExceeded -> updateOwnerKeyToHeirKey [label=Yes]
+}
