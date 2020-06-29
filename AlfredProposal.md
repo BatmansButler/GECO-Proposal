@@ -79,7 +79,7 @@ The Alfred Estate smart contract is a Gnosis Safe Recovery Module. If access to 
   - Set Executor (if desired)
   - Distribute/Claim Funds
 
-[Detailed Project Plan](./project-plan.md)
+[Detailed Project Plan](https://github.com/BatmansButler/GECO-Proposal/blob/master/project-plan.md)
 
 ### Team description
 - Aaron Anderson brings dApps to market as a dApp engineer and cofounder of Web3Devs and Ching!
